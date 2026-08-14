@@ -621,7 +621,7 @@ jobs:
       - name: Run Tests
         shell: cmd
         run: |
-          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+          call "C:\Program Files\Microsoft Visual Studio\18\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
           nvcc -x cu -I ./include -I ../assert/include -I ../config/include -I ../core/include -c test/mp11.cpp || exit /b
           nvcc -x cu -I ./include -I ../assert/include -I ../config/include -I ../core/include -c test/mp_all.cpp || exit /b
           nvcc -x cu -I ./include -I ../assert/include -I ../config/include -I ../core/include -c test/mp_any.cpp || exit /b
